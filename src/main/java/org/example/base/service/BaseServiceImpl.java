@@ -21,9 +21,9 @@ public class BaseServiceImpl<E extends BaseEntity<ID>, ID extends Serializable, 
 
     @Override
     public E save(E entity) {
-        entityManager.getTransaction().begin();
-        repository.save(entity);
-        entityManager.getTransaction().commit();
+            entityManager.getTransaction().begin();
+            repository.save(entity);
+            entityManager.getTransaction().commit();
         return entity;
     }
 
