@@ -12,4 +12,5 @@ public interface FilmRepository extends BaseRepository<Film,Long> {
     List<Film>  getScoreMoreThanPoints(int rate);
     Film getMaxLengthOfFilm();
     Director getDirector(Film film);
+    List<Film> searchFilm(Film film);
 }
